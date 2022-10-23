@@ -1,0 +1,51 @@
+package intro
+
+// ##(-I .)
+// ##(--overflow --int32)
+
+import "gobraspec"
+
+requires x != gobraspec.MIN_INT
+ensures  x >= 0 ==> res == x
+ensures  x < 0  ==> res == -x
+func abs(x int) (res int) {
+	if x >= 0 {
+		return x
+	}
+	return -1 * x
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
