@@ -1,51 +1,14 @@
 package intro
 
-// ##(-I .)
-// ##(--overflow --int32)
+// ##(--overflow)
+ghost const MIN_INT32 = -2147483648
 
-import "gobraspec"
-
-requires x != gobraspec.MIN_INT
+requires x != MIN_INT32
 ensures  x >= 0 ==> res == x
 ensures  x < 0  ==> res == -x
-func abs(x int) (res int) {
+func Abs(x int32) (res int32) {
 	if x >= 0 {
 		return x
 	}
 	return -1 * x
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
