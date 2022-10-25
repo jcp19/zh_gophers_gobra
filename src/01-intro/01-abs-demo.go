@@ -1,7 +1,5 @@
 package intro
 
-import _ "gobraspec"
-
 func Abs(x int32) int32 {
 	if x >= 0 {
 		return x
@@ -89,5 +87,5 @@ func Abs(x int32) int32 {
 
 
 
-// ##(-I .)
 // ##(--overflow)
+// @ ghost const MIN_INT32 = -2147483648
