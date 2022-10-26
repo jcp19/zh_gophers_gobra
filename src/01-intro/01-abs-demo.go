@@ -88,4 +88,3 @@ func Abs(x int32) (res int32) {
 
 
 // ##(--overflow)
-// @ ghost const MIN_INT32 = -2147483648
